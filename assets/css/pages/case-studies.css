@@ -1,8 +1,309 @@
-/* .bg-main {
+/* .banner {
   width: 100%;
   height: 100%;
   background: hsl(200, 61%, 50%);
   margin-top: 70px;
   height: 440px;
   z-index: 2;
+} */
+
+body {
+  color: #000;
+  font-size: 12px;
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  max-width: 100%;
+}
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
+.regular {
+  font-weight: lighter;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+p {
+  margin: 1px 0 15px;
+  line-height: 20px;
+}
+input,
+textarea,
+select {
+  font-size: 12px;
+  border: none;
+  border: 1px solid #d8d8d8;
+  padding: 10px;
+  margin: 0;
+  color: #666;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 20px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+/* .main {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  max-width: 100%;
+} */
+
+section.banner-casestudy {
+  padding: 0;
+  height: 440px;
+  position: relative;
+  z-index: 2;
+}
+
+section.banner-casetudy .banner {
+  top: 0;
+  margin-top: 90px;
+  position: fixed;
+  height: 440px;
+  width: 100%;
+  background-position: center 0;
+  z-index: 1;
+}
+
+.main section.banner-casestudy ul {
+  margin: 0;
+}
+.main section.banner-casetudy .images {
+  float: left;
+  width: 68.5%;
+  height: 440px;
+  background-position: center;
+}
+.main section.banner-casetudy .caption {
+  background-color: #3883c9;
+  float: left;
+  display: table;
+  width: 31.5%;
+  height: 440px;
+}
+.main section.banner-casetudy .caption .text {
+  display: table-cell;
+  padding: 0 30px;
+  vertical-align: middle;
+}
+.main section.banner-casetudy .caption .text h2 {
+  color: #fff;
+  text-align: left;
+}
+.main section.banner-casetudy .caption .text p {
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.main section.banner-casetudy .caption .text .whiteBorderButton {
+  width: 180px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 50px;
+  margin-top: 5px;
+}
+.main section.banner-casetudy .nav {
+  position: absolute;
+  width: 31.5%;
+  right: 0px;
+  bottom: 0px;
+  z-index: 2;
+}
+.main section.banner-casetudy .nav a {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  text-indent: -99999px;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.main section.banner-casetudy .nav a:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.main section.banner-casetudy .nav a:first-child {
+  margin-right: 1px;
+}
+.main section.banner-casetudy .nav a.next {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url(/assets/images/next_arr_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main section.banner-casetudy .nav a.prev {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url(/assets/images/prev_arr_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* .main section.casestudies-list {
+  padding-top: 100px;
+}
+.main section.casestudies-list h2 {
+  margin-bottom: 50px;
+}
+.main section.casestudies-list .menu-search {
+  position: relative;
+  min-height: 50px;
+  margin: 0px 0 30px 0;
+  padding: 15px 0 0 0;
+}
+
+.main section.casestudies-list .menu-search .search {
+  background-image: url(/assets/images/search_ico.png) no-repeat 235px center;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 235px;
+  height: 42px;
+  padding: 0px 15px;
+  font-family: "OratorStdMedium";
+  font-size: 16px;
+}
+
+.main section.casestudies-list .wrap-list .box-casestudy {
+  float: left;
+  width: 512px;
+  height: 390px;
+  margin: 0px 23px 65px 0px;
+  cursor: pointer;
+}
+.main section.casestudies-list .wrap-list .box-casestudy.last {
+  margin-right: 0;
+}
+.main section.casestudies-list .wrap-list .box-casestudy .images {
+  width: 512px;
+  height: 321px;
+  position: relative;
+  overflow: hidden;
+}
+.main section.casestudies-list .wrap-list .box-casestudy .images .box-hover {
+  background-image: url(/images/material/bg_popup.png) repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+.main
+  section.casestudies-list
+  .wrap-list
+  .box-casestudy
+  .images
+  .box-hover
+  .arr-hover {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.main section.casestudies-list .wrap-list .box-casestudy .images .box-button {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+}
+.main
+  section.casestudies-list
+  .wrap-list
+  .box-casestudy
+  .images
+  .box_button
+  .whiteBorderButton {
+  position: absolute;
+  margin: auto;
+  top: 10px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 175px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 52px;
+}
+.main section.casestudies-list .wrap-list .box-casestudy h6 {
+  color: #777777;
+  font-size: 12px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 30px 0px 10px;
+}
+.main section.casestudies-list .wrap-list .box-casestudy h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+.main section.casestudies-list .load_more {
+  position: relative;
+  height: 142px;
+  background: #f1f1f1 url(../images/material/loader_2.GIF) no-repeat center;
+  bottom: -30px;
+  opacity: 0;
+}
+.main section.casestudies-list .load_more a {
+  background: #f1f1f1;
+  display: block;
+  height: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #004578;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 175px;
+}
+.main section.casestudies-list .load_more a img.ico {
+  position: absolute;
+  margin: auto;
+  top: 40px;
+  right: 0px;
+  left: 0px;
 } */
