@@ -313,3 +313,11 @@ section.banner-casetudy .banner {
     width: 1560px;
   }
 }
+
+#case-study .col-lg-12 {
+  padding: 100px 0px 100px 0px;
+}
+
+#promo .carousel {
+  margin-top: -2px;
+}
